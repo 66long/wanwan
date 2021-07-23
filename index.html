@@ -13,6 +13,77 @@
 			<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
 		<!-- Main css -->
 			<link href="assets/css/main-style.css" rel="stylesheet">
+		<style>
+			#c1{background-color: black}
+			#nav1 ul {
+  				list-style: none;
+			}
+
+			#nav1 ul li {
+				float: left;
+				position:relative;
+			}
+			
+			#nav1 {
+            width: 100%;
+            height: 7%;
+            margin: 0;
+            background: #000000;
+            font-size: 18px;
+			z-index: 99;
+        	}
+			
+			#nav1 li a {
+				display: block;
+				color: white;
+				text-align: center;
+				padding: 0;
+				text-decoration: none;
+			}
+
+			#nav1 ul li a {
+                    display: block;
+                    width: 200px;
+                    height: 20%;
+                    line-height: 5rem;
+                    text-align: center;
+                    color: #fff;
+                }
+			
+			 #nav1 ul li a:hover {
+                        color: #ffd800;
+                        background: #000000;
+                    }
+                /*二级菜单样式*/
+                #nav1 ul li ul {
+                position:absolute;
+                top:100%;
+                left:0;
+                display:none;
+				z-index: 99;
+                }
+                    #nav1 ul li ul li {
+                    float:none;
+                    }
+                    #nav1 ul li ul li a{
+                        background: #000000;
+                        border-top:1px solid #ccc;
+                    }
+                    /*一级菜单悬停时二级菜单可见*/
+               #nav1 ul li:hover ul {
+                display:block;
+                }
+
+			#tg1{margin-top: 1%;}
+			.section-gap{padding-top: 0 !important;}
+			
+			.recent-post-blog{height: 18rem}
+			.ctabimg{width: 15rem; height: 15rem;display: inline-block;vertical-align: middle;margin-left: 1%}
+			.tabimg{width: 100%;}
+			.gfont{width: 65rem;display: inline-block;margin-left: 5%;position: absolute}
+			.ga{font-size: 20px;}
+			.fh6{float: right;margin-right: 1%}
+		</style>
 	</head>
 
 	<body class="">
@@ -121,64 +192,62 @@
 			</div>
 		
 		<!--导航栏2-->
-		<section id="dark-back" class="left-hundred">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-6">
-							<div class="nav-dark-bottom-right">
-								<ul>
-									<li class="drop"><a href="#">1</a>
-										<ul class="drop-down">
-											<li><a href="tag.html">标签</a></li>
-											<li><a href="#">1</a></li>
-										</ul>
-									</li>
-									<li class="drop"><a href="#">2</a>
-										<ul class="drop-down">
-											<li><a href="#">1</a></li>
-											<li><a href="#">1</a></li>
-										</ul>
-									</li>
-									<li class="drop"><a href="#">3</a>
-										<ul class="drop-down">
-											<li><a href="#">1</a></li>
-											<li><a href="#">1</a></li>
-										</ul>
-									</li>
-									<li class="drop"><a href="#">4</a>
-										<ul class="drop-down">
-											<li><a href="#">1</a></li>
-											<li><a href="#">1</a></li>
-										</ul>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+		<div class="container" id="c1">
+			<div class="row">
+			<div class="col-md-2" id="nav1">
+				<ul>
+					<li><a href="#">您的商店</a>
+						<ul>
+							<li><a href="index.html">主页</a></li>
+							<li><a href="tag.html">标签</a></li>
+							<li><a href="#">偏好</a></li>
+						</ul></li>
+							
+					<li><a href="#">新鲜推荐</a>
+						<ul>
+							<li><a href="#">热销商品</a></li>
+							<li><a href="#">新品与热门商品</a></li>
+							<li><a href="#">当前特惠</a></li>
+							<li><a href="#">最近更新</a></li>
+							<li><a href="#">热门即将推出</a></li>
+						</ul></li>
+					<li><a href="#">类别</a>
+						<ul>
+							<li></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			</div>
+		</div>
 		
-		<button style="float: right;margin-right: 12%"><a href="#">愿望单</a></button>
+		<button style="float: right;margin-right: 12%;"><a href="#">愿望单</a></button><br/>
 		
 			<section>
 				<div class="container">
-					<div class="row top-hundred">
+					<div class="row ">
 						<!-- 侧边导航栏 -->
-						<div class="col-md-4">
+						<div class="col-md-3" style="border: solid; margin-top: 1%">
 							<div class="col-2-right">
-								<div class="portfolio-right-header">
-									<a href="#">1</a><br/>
-									<a href="#">1</a><br/>
-									<a href="#">1</a><br/>
-									<a href="#">1</a><br/>
-									<a href="#">1</a><br/>
-									<a href="#">1</a><br/>
-									<a href="#">1</a><br/>
-									<a href="#">1</a><br/>
-									<a href="#">1</a><br/>
-									<a href="#">1</a><br/>
-									<a href="#">1</a><br/>
-									<a href="#">1</a><br/>
+								<div class="portfolio-right-header" id="tg1">
+									<img src="assets/images/sx.jpg" alt=""><br/>
+									<small>推荐</small><br/>
+									<a href="#">由好友推荐</a><br/>
+									<a href="tag.html">标签</a><br/>
+									<small>浏览分类</small><br/>
+									<a href="#">热销商品</a><br/>
+									<a href="#">新品</a><br/>
+									<a href="#">即将推出</a><br/>
+									<a href="#">优惠</a><br/>
+									<a href="#">虚拟现实</a><br/>
+									<a href="#">支持控制器</a><br/>
+									<small>按类型浏览</small><br/>
+									<a href="#">免费游玩</a><br/>
+									<a href="#">抢先体验</a><br/>
+									<a href="#">休闲</a><br/>
+									<a href="#">体育</a><br/>
+									<a href="#">冒险</a><br/>
+									<a href="#">动作</a><br/>
 								</div>
 							</div>
 						</div>
@@ -186,13 +255,14 @@
 					
 						<div class="col-md-8">
 						<!-- row One -->
-							<div class="blog-two-content">
+							<div class="blog-two-content" id="btc">
 								<section id="testimonial" class="section-gap">
 									<!--轮播图1-->
 									<div class="">		
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2">
 							<div class="testimonial-slide-1">
+								
 								<div class="item">
 									<div class="">
 										<div class="testimonial-slider">
@@ -361,104 +431,227 @@
 				</div>
 			</section>
 
-		<div class="tab-horizontal">
+		<div class="tab" style="margin: 0 11% 0 13%;border: #646464 solid;">
 									<!-- 选项卡 -->
 									<ul class="nav nav-tabs">
-									  <li class="active"><a class="tab-back-red" href="#eightteen" data-toggle="tab">Popular Posts</a></li>
-									  <li><a class="tab-back-red" href="#nineteen" data-toggle="tab">Recent Posts</a></li>
+										<li class="active"><a class="tab-back-red" href="#tab1" data-toggle="tab">新品与热门商品</a></li>
+										<li><a class="tab-back-red" href="#tab2" data-toggle="tab">热销商品</a></li>
+										<li><a class="tab-back-red" href="#tab3" data-toggle="tab">热门即将推出</a></li>
+										<li><a class="tab-back-red" href="#tab4" data-toggle="tab">优惠</a></li>
 									</ul>
 
 									<!-- 游戏内容 -->
-									<div class="tab-content">
-										<div class="tab-pane fade in active" id="eightteen">
+									<div class="tab-content" style="margin-top: 0;">
+										<div class="tab-pane fade in active" id="tab1">
 											<div class="recent-post-blog bottom-border-height">
-												<div class="blog-post-img">
-													<img class="img-responsive" src="assets/images/blog/blog-right-1.jpg" alt="">
+												<div class="ctabimg">
+													<img class="tabimg" src="assets/images/m1.jpg" alt="">
 												</div>
-												<div class="blog-post-content">
+												<div class="blog-post-content gfont">
+													<a href="details.html" class="ga">AMD,YES!</a>
 													<p>
-														Vestibulum at ante nec risus pellentesque tempus. Mauris quis dui auctor.
+														哼哼啊啊啊啊啊啊啊啊啊啊啊，啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
 													</p>
 													
-													<h6>06 january 2015</h6>
+													<h6 class="fh6">2021年1月1日</h6>
 												</div>
 												
 											</div>
 											
 											<div class="recent-post-blog bottom-border-height">
-												<div class="blog-post-img">
-													<img class="img-responsive" src="assets/images/blog/blog-right-2.jpg" alt="">
+												<div class="ctabimg">
+													<img class="tabimg" src="assets/images/m1.jpg" alt="">
 												</div>
-												<div class="blog-post-content">
+												<div class="blog-post-content gfont">
+													<a href="details.html" class="ga">NVIDIA,NO!</a>
 													<p>
-														Vestibulum at ante nec risus pellentesque tempus. Mauris quis dui auctor.
+														哼哼啊啊啊啊啊啊啊啊啊啊啊，啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
 													</p>
 													
-													<h6>06 january 2015</h6>
+													<h6 class="fh6">2021年1月1日</h6>
 												</div>
 												
 											</div>
 											
-											<div class="recent-post-blog top-30">
-												<div class="blog-post-img">
-													<img class="img-responsive" src="assets/images/blog/blog-right-3.jpg" alt="">
+											<div class="recent-post-blog bottom-border-height">
+												<div class="ctabimg">
+													<img class="tabimg" src="assets/images/m1.jpg" alt="">
 												</div>
-												<div class="blog-post-content">
+												<div class="blog-post-content gfont">
+													<a href="details.html" class="ga">a</a>
 													<p>
 														Vestibulum at ante nec risus pellentesque tempus. Mauris quis dui auctor.
 													</p>
 													
-													<h6>06 january 2015</h6>
+													<h6 class="fh6">2021年1月1日</h6>
+												</div>
+												
+											</div>
+											
+											<div class="recent-post-blog bottom-border-height">
+												<div class="ctabimg">
+													<img class="tabimg" src="assets/images/m1.jpg" alt="">
+												</div>
+												<div class="blog-post-content gfont">
+													<a href="details.html" class="ga">a</a>
+													<p>
+														Vestibulum at ante nec risus pellentesque tempus. Mauris quis dui auctor.
+													</p>
+													
+													<h6 class="fh6">2021年1月1日</h6>
 												</div>
 												
 											</div>
 										</div>
 										
-										<div class="tab-pane fade custom-tab" id="nineteen">
+										<div class="tab-pane fade custom-tab" id="tab2">
 											<div class="recent-post-blog bottom-border-height">
-												<div class="blog-post-img">
-													<img class="img-responsive" src="assets/images/blog/blog-right-1.jpg" alt="">
+												<div class="ctabimg">
+													<img class="tabimg" src="assets/images/m1.jpg" alt="">
 												</div>
-												<div class="blog-post-content">
+												<div class="blog-post-content gfont">
+													<a href="details.html" class="ga">a</a>
 													<p>
-														Vestibulum at ante nec risus pellentesque tempus. Mauris quis dui auctor.
+														qeqwqeq,aqaeaqawaqaeaqa
 													</p>
 													
-													<h6>06 january 2015</h6>
+													<h6 class="fh6">2021年1月1日</h6>
 												</div>
 												
 											</div>
 											
 											<div class="recent-post-blog bottom-border-height">
-												<div class="blog-post-img">
-													<img class="img-responsive" src="assets/images/blog/blog-right-2.jpg" alt="">
+												<div class="ctabimg">
+													<img class="tabimg" src="assets/images/m1.jpg" alt="">
 												</div>
-												<div class="blog-post-content">
+												<div class="blog-post-content gfont">
+													<a href="details.html" class="ga">a</a>
 													<p>
-														Vestibulum at ante nec risus pellentesque tempus. Mauris quis dui auctor.
+														awsl
 													</p>
 													
-													<h6>06 january 2015</h6>
+													<h6 class="fh6">2021年1月1日</h6>
 												</div>
 												
 											</div>
 											
 											<div class="recent-post-blog top-30">
-												<div class="blog-post-img">
-													<img class="img-responsive" src="assets/images/blog/blog-right-3.jpg" alt="">
+												<div class="ctabimg">
+													<img class="tabimg" src="assets/images/m1.jpg" alt="">
 												</div>
-												<div class="blog-post-content">
+												<div class="blog-post-content gfont">
+													<a href="details.html" class="ga">a</a>
 													<p>
 														Vestibulum at ante nec risus pellentesque tempus. Mauris quis dui auctor.
 													</p>
 													
-													<h6>06 january 2015</h6>
+													<h6 class="fh6">2021年1月1日</h6>
+												</div>
+												
+											</div>
+										</div>
+										
+										<div class="tab-pane fade custom-tab" id="tab3">
+											<div class="recent-post-blog bottom-border-height">
+												<div class="ctabimg">
+													<img class="tabimg" src="assets/images/m1.jpg" alt="">
+												</div>
+												<div class="blog-post-content gfont">
+													<a href="details.html" class="ga">a</a>
+													<p>
+														a接w接a接外圈刮接a，一刀斩
+													</p>
+													
+													<h6 class="fh6">2021年1月1日</h6>
+												</div>
+												
+											</div>
+											
+											<div class="recent-post-blog bottom-border-height">
+												<div class="ctabimg">
+													<img class="tabimg" src="assets/images/m1.jpg" alt="">
+												</div>
+												<div class="blog-post-content gfont">
+													<a href="details.html" class="ga">a</a>
+													<p>
+														Vestibulum at ante nec risus pellentesque tempus. Mauris quis dui auctor.
+													</p>
+													
+													<h6 class="fh6">2021年1月1日</h6>
+												</div>
+												
+											</div>
+											
+											<div class="recent-post-blog top-30">
+												<div class="ctabimg">
+													<img class="tabimg" src="assets/images/m1.jpg" alt="">
+												</div>
+												<div class="blog-post-content gfont">
+													<a href="details.html" class="ga">a</a>
+													<p>
+														Vestibulum at ante nec risus pellentesque tempus. Mauris quis dui auctor.
+													</p>
+													
+													<h6 class="fh6">2021年1月1日</h6>
+												</div>
+												
+											</div>
+										</div>
+										
+										<div class="tab-pane fade custom-tab" id="tab4">
+											<div class="recent-post-blog bottom-border-height">
+												<div class="ctabimg">
+													<img class="tabimg" src="assets/images/m1.jpg" alt="">
+												</div>
+												<div class="blog-post-content gfont">
+													<a href="details.html" class="ga">a</a>
+													<p>
+														哼哼啊啊啊啊啊啊啊啊啊啊啊，啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+													</p>
+													
+													<h6 class="fh6">2021年1月1日</h6>
+												</div>
+												
+											</div>
+											
+											<div class="recent-post-blog bottom-border-height">
+												<div class="ctabimg">
+													<img class="tabimg" src="assets/images/m1.jpg" alt="">
+												</div>
+												<div class="blog-post-content gfont">
+													<a href="details.html" class="ga">a</a>
+													<p>
+														Vestibulum at ante nec risus pellentesque tempus. Mauris quis dui auctor.
+													</p>
+													
+													<h6 class="fh6">2021年1月1日</h6>
+												</div>
+												
+											</div>
+											
+											<div class="recent-post-blog top-30">
+												<div class="ctabimg">
+													<img class="tabimg" src="assets/images/m1.jpg" alt="">
+												</div>
+												<div class="blog-post-content gfont">
+													<a href="details.html" class="ga">a</a>
+													<p>
+														Vestibulum at ante nec risus pellentesque tempus. Mauris quis dui auctor.
+													</p>
+													
+													<h6 class="fh6">2021年1月1日</h6>
 												</div>
 												
 											</div>
 										</div>
 									</div>
 								</div>
+		
+		<div class="footer">
+			
+		</div>
+		
+		
 		
 		<!-- 返回顶部 -->
 			<div id="back-top">
@@ -477,7 +670,9 @@
 			<script src="assets/js/portfolio/portfolio-about-mas.js"></script>
 				
 			<script src="assets/js/menu/jquery.sticky.js"></script>
+		
 			<script src="assets/js/owl.carousel.min.js"></script>
+		
 			<script src="assets/js/slick.min.js"></script>
 			<script src="assets/js/waypoints.min.js"></script>
 			<script src="assets/js/modernizr.custom.js"></script>
